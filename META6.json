@@ -1,0 +1,54 @@
+{
+   "meta6" : "0",
+   "tags" : [
+	"games",
+	"gaming",
+	"chess",
+	"Japanese",
+	"Japanese Chess",
+	"shogi"
+   ],
+   "provides" : {
+	"Games::Shogi::Board" : "lib/Games/Shogi/Board.pm6",
+	"Games::Shogi::Board::Chu" : "lib/Games/Shogi/Board/Chu.pm6",
+	"Games::Shogi::Board::Dai" : "lib/Games/Shogi/Board/Dai.pm6",
+	"Games::Shogi::Board::DaiDai" : "lib/Games/Shogi/Board/DaiDai.pm6",
+	"Games::Shogi::Board::Dōbutsu" : "lib/Games/Shogi/Board/Dōbutsu.pm6",
+	"Games::Shogi::Board::Kō" : "lib/Games/Shogi/Board/Kō.pm6",
+	"Games::Shogi::Board::MakaDaiDai" : "lib/Games/Shogi/Board/MakaDaiDai.pm6",
+	"Games::Shogi::Board::Standard" : "lib/Games/Shogi/Board/Standard.pm6",
+	"Games::Shogi::Board::Tai" : "lib/Games/Shogi/Board/Tai.pm6",
+	"Games::Shogi::Board::Taikyoku" : "lib/Games/Shogi/Board/Taikyoku.pm6",
+	"Games::Shogi::Board::Tenjiku" : "lib/Games/Shogi/Board/Tenjiku.pm6",
+	"Games::Shogi::Board::Tori" : "lib/Games/Shogi/Board/Tori.pm6",
+	"Games::Shogi::Board::Wa" : "lib/Games/Shogi/Board/Wa.pm6",
+	"Games::Shogi::Piece" : "lib/Games/Shogi/Piece.pm6",
+	"Games::Shogi::Piece::Crane" : "lib/Games/Shogi/Piece/Crane.pm6",
+	"Games::Shogi::Piece::Eagle" : "lib/Games/Shogi/Piece/Eagle.pm6",
+	"Games::Shogi::Piece::Falcon" : "lib/Games/Shogi/Piece/Falcon.pm6",
+	"Games::Shogi::Piece::Pheasant" : "lib/Games/Shogi/Piece/Pheasant.pm6",
+	"Games::Shogi::Piece::Phoenix" : "lib/Games/Shogi/Piece/Phoenix.pm6",
+	"Games::Shogi::Piece::Quail-Left" : "lib/Games/Shogi/Piece/Quail-Left.pm6",
+	"Games::Shogi::Piece::Quail-Right" : "lib/Games/Shogi/Piece/Quail-Right.pm6",
+	"Games::Shogi::Piece::Swallow" : "lib/Games/Shogi/Piece/Swallow.pm6",
+   },
+   "test-depends" : [
+      "Test"
+   ],
+   "support" : {
+      "source" : "https://github.com/drforr/perl6-Games-Shogi"
+   },
+   "perl" : "6.c",
+   "build-depends" : [],
+   "auth" : "github:drforr",
+   "source-url" : "https://github.com/drforr/perl6-Games-Shogi.git",
+   "depends" : [
+   ],
+   "name" : "Games::Shogi",
+   "authors" : [
+      "Jeffrey Goff <drforr@pobox.com>"
+   ],
+   "version" : "0.0.5",
+   "license" : "Artistic",
+   "description" : "Roles for the Shogi class of board games"
+}
