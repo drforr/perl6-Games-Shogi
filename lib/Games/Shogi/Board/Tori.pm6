@@ -27,13 +27,14 @@ role Games::Shogi::Board::Tori {
 	method allow-drops returns Bool { True }
 	method promotion-rank { 5 }
 	method starting-configuration {
-		[ 'RQ', 'Pt', 'Cr', 'Ph', 'Cr', 'Pt', 'LQ' ],
-		[ '',   '',   '',   'Fa', '',   '',   ''   ],
-		[ 'Sw', 'Sw', 'Sw', 'Sw', 'Sw', 'Sw', 'Sw' ],
-		[ '',   '',   'Sw', '',   'Sw', '',   ''   ],
-		[ 'Sw', 'Sw', 'Sw', 'Sw', 'Sw', 'Sw', 'Sw' ],
-		[ '',   '',   '',   'Fa',  '',  '',   ''   ],
-		[ 'LQ', 'Pt', 'Cr', 'Ph', 'Cr', 'Pt', 'RQ' ]
+		# 7     6     5     4     3     2     1
+		[ 'RQ', 'Pt', 'Cr', 'Ph', 'Cr', 'Pt', 'LQ' ], # a
+		[ '',   '',   '',   'Fa', '',   '',   ''   ], # b
+		[ 'Sw', 'Sw', 'Sw', 'Sw', 'Sw', 'Sw', 'Sw' ], # c
+		[ '',   '',   'Sw', '',   'Sw', '',   ''   ], # d
+		[ 'Sw', 'Sw', 'Sw', 'Sw', 'Sw', 'Sw', 'Sw' ], # e
+		[ '',   '',   '',   'Fa',  '',  '',   ''   ], # f
+		[ 'LQ', 'Pt', 'Cr', 'Ph', 'Cr', 'Pt', 'RQ' ]  # g
 	}
 	method piece-abbreviation {
 		'RQ' => Games::Shogi::Piece::Quail-Right,

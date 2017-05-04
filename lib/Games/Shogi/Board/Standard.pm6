@@ -31,9 +31,26 @@ role Games::Shogi::Board::Standard {
 	method allow-drops returns Bool { False }
 	method promotion-rank { die; }
 	method starting-configuration {
-		die;
+		#  9    8    7    6    5    4     3   2    1
+		[ 'L', 'N', 'S', 'G', 'K', 'G', 'S', 'N', 'L' ], # a
+		[ '',  'R', '',  '',  '',  '',  '',  'B',  '' ], # b
+		[ 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P' ], # c
+		[ '',  '',  '',  '',  '',  '',  '',  '',  ''  ], # d
+		[ '',  '',  '',  '',  '',  '',  '',  '',  ''  ], # e
+		[ '',  '',  '',  '',  '',  '',  '',  '',  ''  ], # f
+		[ 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P' ], # g
+		[ '',  'B', '',  '',  '',  '',  '',  'R',  '' ], # h
+		[ 'L', 'N', 'S', 'G', 'K', 'G', 'S', 'N', 'L' ]  # i
 	}
-	method piece-abbreviation { die; }
+	method piece-abbreviation {
+		L => Games::Shogi::Board::Lance,
+		N => Games::Shogi::Board::Knight,
+		S => Games::Shogi::Board::Silver,
+		G => Games::Shogi::Board::Gold,
+		K => Games::Shogi::Board::King,
+		R => Games::Shogi::Board::Rook,
+		B => Games::Shogi::Board::Bishop,
+	}
 }
 
 # vim: ft=perl6 et sw=4

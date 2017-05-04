@@ -27,7 +27,18 @@ role Games::Shogi::Board::Wa {
 	method allow-drops returns Bool { False }
 	method promotion-rank { die; }
 	method starting-configuration {
-		die;
+		# 11    10    9     8     7     6      5     4    3     2     1
+		[ 'LH', 'CM', 'SO', 'FC', 'VS', 'CK', 'VW', 'FG', 'SC', 'BD', 'OC' ], # a
+		[ '',   'CE', '',   '',   '',   'SW', '',   '',   '',   'FF', ''   ], # b
+		[ 'SP', 'SP', 'SP', 'RR', 'SP', 'SP', 'SP', 'TF', 'SP', 'SP', 'SP' ] # c
+		[ '',   '',   '',   'SP', '',   '',   '',   'SP', '',   '',   ''   ], # d
+		[ '',   '',   '',   '',   '',   '',   '',   '',   '',   '',   ''   ], # e
+		[ '',   '',   '',   '',   '',   '',   '',   '',   '',   '',   ''   ], # f
+		[ '',   '',   '',   '',   '',   '',   '',   '',   '',   '',   ''   ], # g
+		[ '',   '',   '',   'SP', '',   '',   '',   'SP', '',   '',   ''   ], # h
+		[ 'SP', 'SP', 'SP', 'TF', 'SP', 'SP', 'SP', 'RR', 'SP', 'SP', 'SP' ], # i
+		[ '',   'FF', '',   '',   '',   'SW', '',   '',   '',   'CE', ''   ], # j
+		[ 'OC', 'BD', 'SC', 'FG', 'VW', 'CK', 'VS', 'FC', 'SO', 'CM', 'LH' ]  # k
 	}
 	method piece-abbreviation { die; }
 }
