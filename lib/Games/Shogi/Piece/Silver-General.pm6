@@ -2,7 +2,7 @@
 
 =begin NAME
 
-Games::Shogi::Piece::Gold - Standard Shogi game piece
+Games::Shogi::Piece::Silver-General - Standard Shogi game piece
 
 =end NAME
 
@@ -13,8 +13,8 @@ Games::Shogi::Piece::Gold - Standard Shogi game piece
 =begin MOVES
 
     | m | m | m |
-    | m | G | m |
-    |   | m |   |
+    |   | S |   |
+    | m |   | m |
 
 =end MOVES
 
@@ -22,12 +22,12 @@ Games::Shogi::Piece::Gold - Standard Shogi game piece
 
 use Games::Shogi::Piece;
 
-role Games::Shogi::Piece::Gold {
+role Games::Shogi::Piece::Silver-General {
 	also does Games::Shogi::Piece;
 
-	method name { 'Gold' }
-	method Kanji { '金' }
-	method abbreviation { 'G' }
+	method name { 'Silver General' }
+	method Kanji { '銀' }
+	method abbreviation { 'S' }
 #	method promotes-to { 'Pt' }
 #	method Betza { 'FfbW' }
 }

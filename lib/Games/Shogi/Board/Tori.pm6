@@ -37,17 +37,14 @@ role Games::Shogi::Board::Tori {
 		[ 'LQ', 'Pt', 'Cr', 'Ph', 'Cr', 'Pt', 'RQ' ]  # g
 	}
 	method piece-abbreviation {
-		'RQ' => Games::Shogi::Piece::Quail-Right,
-		'LQ' => Games::Shogi::Piece::Quail-Left,
-		'Pt' => Games::Shogi::Piece::Pheasant,
-		'Cr' => Games::Shogi::Piece::Crane,
-		'Ph' => Games::Shogi::Piece::Phoenix,
-		'Fa' => Games::Shogi::Piece::Falcon,
-
-		# Promoted pieces
-		#
-		'Ea' => Games::Shogi::Piece::Eagle,
-		'Go' => Games::Shogi::Piece::Goose,
+		Cr => Games::Shogi::Piece::Crane,
+		Ea => Games::Shogi::Piece::Eagle,
+		Fa => Games::Shogi::Piece::Falcon,
+		Go => Games::Shogi::Piece::Goose,
+		LQ => Games::Shogi::Piece::Quail-Left,
+		Ph => Games::Shogi::Piece::Phoenix,
+		Pt => Games::Shogi::Piece::Pheasant,
+		RQ => Games::Shogi::Piece::Quail-Right,
 	}
 }
 

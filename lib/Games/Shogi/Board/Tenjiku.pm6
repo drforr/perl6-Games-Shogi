@@ -45,7 +45,44 @@ role Games::Shogi::Board::Tenjiku {
 		[ 'RC', '',   'CS', 'CS', '',   'BT', 'Kr', 'Ln', 'Q',  'Ph', 'BT', '',   'CS', 'CS', '',   'RC' ], # p
 		[ 'L',  'N',  'FL', 'I',  'C',  'S',  'G',  'K',  'DE', 'G',  'S',  'C',  'I',  'FL', 'N',  'L'  ], # q
 	}
-	method piece-abbreviation { die; }
+	method piece-abbreviation {
+		B  => Games::Shogi::Piece::Bishop,
+		BG => Games::Shogi::Piece::Bishop-General,
+		BT => Games::Shogi::Piece::Blind-Tiger,
+		C  => Games::Shogi::Piece::Copper-General,
+		CS => Games::Shogi::Piece::Chariot-Soldier,
+		D  => Games::Shogi::Piece::Dog,
+		DE => Games::Shogi::Piece::Drunk-Elephant,
+		DH => Games::Shogi::Piece::Dragon-Horse,
+		DK => Games::Shogi::Piece::Dragon-King,
+		FD => Games::Shogi::Piece::Fire-Demon,
+		FE => Games::Shogi::Piece::Free-Eagle,
+		FL => Games::Shogi::Piece::Ferocious-Leopard,
+		G  => Games::Shogi::Piece::Gold-General,
+		GG => Games::Shogi::Piece::Great-General,
+		HF => Games::Shogi::Piece::Horned-Falcon,
+		I  => Games::Shogi::Piece::Iron-General,
+		K  => Games::Shogi::Piece::King,
+		Kr => Games::Shogi::Piece::Kirin,
+		L  => Games::Shogi::Piece::Lance,
+		LH => Games::Shogi::Piece::Lion-Hawk,
+		Ln => Games::Shogi::Piece::Lion,
+		N  => Games::Shogi::Piece::Knight,
+		Ph => Games::Shogi::Piece::Phoenix,
+		Q  => Games::Shogi::Piece::Queen,
+		R  => Games::Shogi::Piece::Rook,
+		RC => Games::Shogi::Piece::Reverse-Chariot, # XXX abbreviated to Rv elsewhere
+		RG => Games::Shogi::Piece::Rook-General,
+		S  => Games::Shogi::Piece::Silver-General,
+		SE => Games::Shogi::Piece::Soaring-Eagle,
+		SM => Games::Shogi::Piece::Side-Mover,
+		SS => Games::Shogi::Piece::Side-Soldier,
+		VG => Games::Shogi::Piece::Vice-General,
+		VM => Games::Shogi::Piece::Vertical-Mover,
+		VS => Games::Shogi::Piece::Vertical-Soldier,
+		WB => Games::Shogi::Piece::Water-Buffalo,
+		p  => Games::Shogi::Piece::Pawn,
+	}
 }
 
 # vim: ft=perl6 et sw=4

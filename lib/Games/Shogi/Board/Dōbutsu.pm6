@@ -43,18 +43,19 @@ role Games::Shogi::Board::Dōbutsu {
 	method width returns Int { FILE }
 	method promotion-rank { 3 } # referenced from 0
 	method allow-drops returns Bool { True }
-	method piece-abbreviation {
-		g => 'Games::Shogi::Piece::Giraffe',
-		l => 'Games::Shogi::Piece::Lion',
-		e => 'Games::Shogi::Piece::Elephant',
-		c => 'Games::Shogi::Piece::Chick',
-		h => 'Games::Shogi::Piece::Hen',
-	}
 	method starting-configuration {
-		[ 'g', 'l', 'e' ],
-		[ ' ', 'c', ' ' ],
-		[ ' ', 'C', ' ' ],
-		[ 'E', 'L', 'G' ],
+		# 3    2    1
+		[ 'G', 'L', 'E' ], # a
+		[ ' ', 'C', ' ' ], # b
+		[ ' ', 'C', ' ' ], # c
+		[ 'E', 'L', 'G' ], # d
+	}
+	method piece-abbreviation {
+		C => 'Games::Shogi::Piece::Chick',
+		E => 'Games::Shogi::Piece::Elephant',
+		G => 'Games::Shogi::Piece::Giraffe',
+		H => 'Games::Shogi::Piece::Hen',
+		L => 'Games::Shogi::Piece::Lion',
 	}
 }
 

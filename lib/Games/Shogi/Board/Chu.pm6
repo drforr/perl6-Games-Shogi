@@ -41,7 +41,29 @@ role Games::Shogi::Board::Chu {
 		[ 'RC', '',   'B'  '',   'BT', 'Ph', 'Kr', 'BT', '',   'B',  '',   'RC' ], # 2
 		[ 'L',  'FL', 'C', 'S',  'G',  'DE', 'K',  'G',  'S',  'C',  'FL', 'L'  ], # 1
 	}
-	method piece-abbreviation { die; }
+	method piece-abbreviation {
+		B  => Games::Shogi::Piece::Bishop,
+		BT => Games::Shogi::Piece::Blind-Tiger,
+		C  => Games::Shogi::Piece::Copper-General,
+		DE => Games::Shogi::Piece::Drunk-Elephant,
+		DH => Games::Shogi::Piece::Dragon-Horse,
+		DK => Games::Shogi::Piece::Dragon-King,
+		FL => Games::Shogi::Piece::Ferocious-Leopard,
+		G  => Games::Shogi::Piece::Gold-General,
+		GB => Games::Shogi::Piece::Go-Between,
+		K  => Games::Shogi::Piece::King,
+		Kr => Games::Shogi::Piece::Kirin,
+		L  => Games::Shogi::Piece::Lance,
+		Ln => Games::Shogi::Piece::Lion,
+		Ph => Games::Shogi::Piece::Phoenix,
+		Q  => Games::Shogi::Piece::Queen,
+		R  => Games::Shogi::Piece::Rook,
+		RC => Games::Shogi::Piece::Reverse-Chariot,
+		S  => Games::Shogi::Piece::Silver-General,
+		SM => Games::Shogi::Piece::Side-Mover,
+		VM => Games::Shogi::Piece::Vertical-Mover
+		p  => Games::Shogi::Piece::Pawn,
+	}
 }
 
 # vim: ft=perl6 et sw=4

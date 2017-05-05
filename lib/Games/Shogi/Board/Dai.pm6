@@ -44,7 +44,37 @@ role Games::Shogi::Board::Dai {
 		[ 'RC', '',   'CS', '',   'FL', '',   'BT', 'DE', 'BT', '',   'FL', '',   'CS', '',   'RC' ], # n
 		[ 'L',  'N',  'St', 'I',  'C',  'S',  'G',  'K',  'G',  'S',  'C',  'I',  'St', 'N',  'L'  ], # o
 	}
-	method piece-abbreviation { die; }
+	method piece-abbreviation {
+		AB => Games::Shogi::Piece::Angry-Boar,
+		B  => Games::Shogi::Piece::Bishop,
+		BT => Games::Shogi::Piece::Blind-Tiger,
+		C  => Games::Shogi::Piece::Copper-General,
+		CS => Games::Shogi::Piece::Cat-Sword,
+		DE => Games::Shogi::Piece::Drunk-Elephant,
+		DH => Games::Shogi::Piece::Dragon-Horse,
+		DK => Games::Shogi::Piece::Dragon-King,
+		EW => Games::Shogi::Piece::Evil-Wolf,
+		FD => Games::Shogi::Piece::Flying-Dragon,
+		FL => Games::Shogi::Piece::Ferocious-Leopard,
+		G  => Games::Shogi::Piece::Gold-General,
+		GB => Games::Shogi::Piece::Go-Between,
+		I  => Games::Shogi::Piece::Iron-General,
+		K  => Games::Shogi::Piece::King,
+		Kr => Games::Shogi::Piece::Kirin,
+		L  => Games::Shogi::Piece::Lance,
+		Ln => Games::Shogi::Piece::Lion,
+		N  => Games::Shogi::Piece::Knight,
+		Ph => Games::Shogi::Piece::Phoenix,
+		Q  => Games::Shogi::Piece::Queen,
+		R  => Games::Shogi::Piece::Rook,
+		RC => Games::Shogi::Piece::Reverse-Chariot,
+		S  => Games::Shogi::Piece::Silver-General,
+		SM => Games::Shogi::Piece::Side-Mover,
+		St => Games::Shogi::Piece::Stone-General,
+		VM => Games::Shogi::Piece::Vertical-Mover,
+		VO => Games::Shogi::Piece::Violent-Ox,
+		p  => Games::Shogi::Piece::Pawn,
+	}
 }
 
 # vim: ft=perl6 et sw=4

@@ -43,13 +43,13 @@ role Games::Shogi::Board::Standard {
 		[ 'L', 'N', 'S', 'G', 'K', 'G', 'S', 'N', 'L' ]  # i
 	}
 	method piece-abbreviation {
-		L => Games::Shogi::Board::Lance,
-		N => Games::Shogi::Board::Knight,
-		S => Games::Shogi::Board::Silver,
+		B => Games::Shogi::Board::Bishop,
 		G => Games::Shogi::Board::Gold,
 		K => Games::Shogi::Board::King,
+		L => Games::Shogi::Board::Lance,
+		N => Games::Shogi::Board::Knight,
 		R => Games::Shogi::Board::Rook,
-		B => Games::Shogi::Board::Bishop,
+		S => Games::Shogi::Board::Silver,
 	}
 }
 
