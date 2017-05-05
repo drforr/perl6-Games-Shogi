@@ -2,7 +2,7 @@
 
 =begin NAME
 
-Games::Shogi::Board::MakaDaiDai - Roles for Maka Dai Dai Shogi, no actual classes.
+Games::Shogi::Board::Maka-Dai-Dai - Roles for Maka Dai Dai Shogi, no actual classes.
 
 =end NAME
 
@@ -19,7 +19,7 @@ my constant SIDE = 19;
 subset Rank of Int where 0 <= * <= SIDE;
 subset File of Int where 0 <= * <= SIDE;
 
-role Games::Shogi::Board::MakaDaiDai {
+role Games::Shogi::Board::Maka-Dai-Dai {
 	also does Games::Shogi::Board;
 
 	method height returns Int { SIDE }
